@@ -4,7 +4,7 @@ import { usePokemonData, getAllPokemonTypes } from '../services/pokemonService';
 import PokemonCard from './PokemonCard';
 import SearchBar from './SearchBar';
 import TypeFilter from './TypeFilter';
-import { Loader } from 'lucide-react';
+import { Skeleton } from './ui/skeleton';
 import { Alert, AlertDescription } from './ui/alert';
 
 const PokemonExplorer: React.FC = () => {
@@ -35,8 +35,19 @@ const PokemonExplorer: React.FC = () => {
   if (isLoading) {
     return (
       <div className="flex flex-col items-center justify-center min-h-[400px]">
-        <Loader className="h-10 w-10 animate-[spin_1.5s_linear_infinite] text-primary mb-4" />
-        <p className="text-lg">Loading Pokémon data...</p>
+        <div className="space-y-4 w-full max-w-md">
+          <Skeleton className="h-12 w-12 rounded-full mx-auto" />
+          <Skeleton className="h-6 w-3/4 mx-auto" />
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-6">
+            {[1, 2, 3, 4, 5, 6].map((i) => (
+              <div key={i} className="space-y-2">
+                <Skeleton className="h-32 w-full" />
+                <Skeleton className="h-4 w-3/4 mx-auto" />
+                <Skeleton className="h-6 w-1/2 mx-auto" />
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     );
   }

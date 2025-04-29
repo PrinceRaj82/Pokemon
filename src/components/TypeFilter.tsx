@@ -17,7 +17,7 @@ interface TypeFilterProps {
 const TypeFilter: React.FC<TypeFilterProps> = ({ types, selectedType, onTypeChange }) => {
   return (
     <Select value={selectedType} onValueChange={onTypeChange}>
-      <SelectTrigger className="w-full max-w-[200px] bg-background">
+      <SelectTrigger className="w-full max-w-[200px]">
         <SelectValue placeholder="Filter by type" />
       </SelectTrigger>
       <SelectContent>
