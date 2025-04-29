@@ -1,73 +1,57 @@
-# Welcome to your Lovable project
+# 🧩 Interactive Data Explorer — Pokémon Search & Filter App
 
-## Project info
+A responsive, user-friendly web application built with **React + TypeScript** that fetches and displays the first 150 Pokémon using the [PokeAPI](https://pokeapi.co/). Users can search Pokémon by name and filter them by type in real-time.
 
-**URL**: https://lovable.dev/projects/ee7ac339-594c-47cb-b8f2-e43486588f5f
+---
 
-## How can I edit this code?
+## 📸 Demo
 
-There are several ways of editing your application.
+> 🚀 **Live Link:** [Click here](https://pokemon-orpin-seven.vercel.app/)  
+> 📂 **GitHub Repo:** [Click here](https://github.com/PrinceRaj82/Pokemon.git)
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/ee7ac339-594c-47cb-b8f2-e43486588f5f) and start prompting.
+## 🛠️ Features
 
-Changes made via Lovable will be committed automatically to this repo.
+- ✅ Fetch and display 150 Pokémon from the PokeAPI
+- 🔍 Real-time search by name
+- 🧪 Filter by Pokémon type (e.g., Fire, Water, Grass)
+- 🖼️ Card-based layout showing:
+  - Pokémon name
+  - Sprite image
+  - Type(s)
+  - ID number
+- 📱 Fully responsive on desktop and mobile
+- 🧩 Built with reusable components
+- ⚠️ Handles API loading and error states gracefully
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🔧 Tech Stack
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- **Framework:** React + Vite + TypeScript
+- **State Management:** React Hooks
+- **Styling:** Tailwind CSS & Radix UI
+- **API:** [PokeAPI v2](https://pokeapi.co/docs/v2)
+- **Routing:** React Router DOM
+- **Async Fetching:** @tanstack/react-query
+- **Form Control:** react-hook-form + zod
+- **Deployment:** Vercel / Netlify / GitHub Pages
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## Project setup Guide
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+```
+git clone https://github.com/PrinceRaj82/Pokemon.git
+```
+```
+cd Pokemon
+```
+```
+npm install
+```
+```
 npm run dev
 ```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/ee7ac339-594c-47cb-b8f2-e43486588f5f) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Now project is running on local Machine port 8080
